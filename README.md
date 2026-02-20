@@ -1,8 +1,9 @@
-# Emotion Detection from Text  
+# Emotion Detection from Text
 
-## Overview  
-This project focuses on detecting human emotions from textual data using Machine Learning techniques. The system classifies text into six emotion categories:
+## Overview
+This project implements a Machine Learning based emotion classification system that detects human emotions from textual data using Natural Language Processing (NLP) techniques.
 
+The model classifies text into six emotion categories:
 - Anger  
 - Fear  
 - Joy  
@@ -10,72 +11,55 @@ This project focuses on detecting human emotions from textual data using Machine
 - Sadness  
 - Surprise  
 
-The goal is to build an emotionally intelligent system that can understand and classify emotions expressed in tweets.
+The objective is to build an emotion-aware system capable of understanding and categorizing emotional expressions in social media text.
 
 ---
 
-## Dataset  
-
-- Dataset Used: SemEval-2018 Affect in Tweets  
-- Total Samples: 20,000 tweets  
+## Dataset
+- Source: SemEval-2018 Affect in Tweets  
+- Total Samples: 20,000 labeled tweets  
 - Emotion Classes: anger, fear, joy, love, sadness, surprise  
 
 ---
 
-## Technologies Used  
+## Methodology
 
-- Python  
-- Pandas  
-- NumPy  
-- NLTK  
-- Scikit-learn  
-- Matplotlib  
-- Seaborn  
-
----
-
-## Data Preprocessing  
-
-The following preprocessing steps were applied:
-
+### Text Preprocessing
 - Lowercasing text  
-- Emoji replacement  
-- Removing punctuation, URLs, numbers  
+- Emoji replacement using a custom dictionary  
+- Removal of URLs, mentions, punctuation, and numbers  
 - Tokenization  
 - Stopword removal  
 - Lemmatization  
-- Feature extraction using CountVectorizer and TF-IDF  
 
----
+### Feature Engineering
+- CountVectorizer  
+- TF-IDF (Term Frequency – Inverse Document Frequency)  
 
-## Models Implemented  
-
-The following Machine Learning models were trained and evaluated:
-
+### Models Implemented
 - Support Vector Machine (SVM)  
 - Logistic Regression  
-- Random Forest  
+- Random Forest Classifier  
 - Multinomial Naive Bayes  
-- Decision Tree  
+- Decision Tree Classifier  
 
 ---
 
-## Model Performance  
+## Results
 
-| Model | Accuracy |
-|-------|----------|
-| Support Vector Machine | 85.675% |
-| Logistic Regression | 80.847% |
-| Decision Tree | 83.434% |
-| Random Forest | 75.805% |
-| Naive Bayes | 43.572% |
+| Model                     | Accuracy  |
+|---------------------------|-----------|
+| Support Vector Machine    | 85.675%   |
+| Logistic Regression       | 80.847%   |
+| Decision Tree             | 83.434%   |
+| Random Forest             | 75.805%   |
+| Naive Bayes               | 43.572%   |
 
 Best Performing Model: Support Vector Machine (SVM)
 
 ---
 
-## Evaluation Metrics  
-
+## Evaluation Metrics
 - Accuracy  
 - Precision  
 - Recall  
@@ -84,8 +68,19 @@ Best Performing Model: Support Vector Machine (SVM)
 
 ---
 
-## Applications  
+## Tech Stack
+- 🐍 Python  
+- 📊 Pandas  
+- 🔢 NumPy  
+- 🧠 NLTK  
+- 🤖 Scikit-learn  
+- 📈 Matplotlib  
+- 🎨 Seaborn  
+- 📓 Jupyter Notebook  
 
+---
+
+## Applications
 - Social Media Sentiment Monitoring  
 - Mental Health Analysis  
 - Customer Feedback Analysis  
@@ -93,7 +88,6 @@ Best Performing Model: Support Vector Machine (SVM)
 
 ---
 
-## Author  
-
+## Author
 Bhuvanagiri Bhavani  
-B.Tech – CSE (AI & ML)  
+B.Tech – CSE (Artificial Intelligence & Machine Learning)
