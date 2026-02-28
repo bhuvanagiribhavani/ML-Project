@@ -49,7 +49,7 @@ The objective is to build an emotion-aware system capable of understanding and c
 
 | Model                     | Accuracy  |
 |---------------------------|-----------|
-| Support Vector Machine    | 85.675%   |
+| Support Vector Machine    | 89.675%   |
 | Logistic Regression       | 80.847%   |
 | Decision Tree             | 83.434%   |
 | Random Forest             | 75.805%   |
